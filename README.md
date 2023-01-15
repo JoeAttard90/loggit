@@ -3,7 +3,7 @@
 This pkg is for easy logging of errors and information. It uses the log standard flags.
 
 ## Installation
-`go get https://github.com/JoeAttard90/loggit`
+`go get github.com/JoeAttard90/loggit`
 
 ## Quick Start
 Call the `NewLoggit()` function to create a new logger. Instancing a new logger at the start of a handler will allow you
