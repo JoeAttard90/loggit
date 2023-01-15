@@ -24,6 +24,12 @@ func NewLoggit() *Loggit {
 	}
 }
 
+func NewLoggitWithoutTXID() *Loggit {
+	return &Loggit{
+		logger: log.New(os.Stderr, "", log.LstdFlags),
+	}
+}
+
 func (l *Loggit) Error(body string, err error, variables ...any) {
 	variables = append(variables, err)
 	logFmt := fmt.Sprintf("[ERROR] txid:%s: %s: %s", l.txID, body, "%v")
