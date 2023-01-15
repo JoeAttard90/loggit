@@ -1,4 +1,4 @@
-module loggit
+module github.com/JoeAttard90/loggit
 
 go 1.19
 
